@@ -12,3 +12,16 @@ sudo rm /usr/local/share/systemtap/tapset/node.stp
 sudo rm /usr/local/lib/dtrace/node.d
 # In case you want to reinstall node with HomeBrew:
 # brew install node
+
+
+To Uninstall node if it has been installed by brew
+brew uninstall node; 
+# or `brew uninstall --force node` which removes all versions
+brew cleanup;
+rm -f /usr/local/bin/npm /usr/local/lib/dtrace/node.d;
+rm -rf ~/.npm;
+
+NOW AGAIN TO RE-INSTALL it with bre
+brew install node;
+which node # => /usr/local/bin/node
+export NODE_PATH='/usr/local/lib/node_modules' # <--- add this ~/.bashrc
