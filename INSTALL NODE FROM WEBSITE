@@ -9,3 +9,6 @@ After installation node will be installed in
 Node.js v11.14.0 to /usr/local/bin/node
  and npm will be installed in
  npm v6.7.0 to /usr/local/bin/npm
+
+To update npm to some other version,we can use this command
+sudo npm install npm@6.9.0 -g
