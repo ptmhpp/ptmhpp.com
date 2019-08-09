@@ -3,3 +3,9 @@ VISIT THIS PAGE
 https://nodejs.org/en/
 
 and download the required version as per your requirement
+
+
+After installation node will be installed in
+Node.js v11.14.0 to /usr/local/bin/node
+ and npm will be installed in
+ npm v6.7.0 to /usr/local/bin/npm
