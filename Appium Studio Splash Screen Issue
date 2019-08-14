@@ -1,0 +1,11 @@
+While opening the Android device in Appium Studio,
+if pop-up blink for a second and disappear
+Check the Error log of Android Studio
+Navigate to Help--->>>Open Log Folder
+Open the latest log file and see the issue......
+Most probably,that is a permission issue and 
+an error with error code-13 will be present and a path of folder
+
+modify the below command with the new path that you find in the log file
+
+sudo chmod +x /Applications/AppiumStudio/bin/adb/adb
