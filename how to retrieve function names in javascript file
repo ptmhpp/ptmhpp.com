@@ -1,0 +1,34 @@
+var MyNamespace = function(){
+  function getAllFunctions(){ 
+    var myfunctions = [];
+    for (var l in this){
+      if (this.hasOwnProperty(l) && 
+          this[l] instanceof Function &&
+          !/myfunctions/i.test(l)){
+        myfunctions.push(l);
+      }
+    }
+    return myfunctions;
+   }
+
+   function foo(){
+      //method body goes here
+   }
+
+   function bar(){
+       //method body goes here
+   }
+
+   function baz(){
+       //method body goes here
+   }
+   return { getAllFunctions: getAllFunctions
+           ,foo: foo
+           ,bar: bar
+           ,baz: baz }; 
+}();
+//usage
+var allfns = MyNamespace.getAllFunctions();
+console.log(allfns)
+//=> allfns is now an array of functions. 
+//   You can run allfns[0]() for example
